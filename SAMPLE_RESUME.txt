@@ -1,0 +1,76 @@
+JOHN DOE
+Full Stack Developer
+Email: john.doe@email.com | Phone: +1 (555) 123-4567
+LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe
+
+PROFESSIONAL SUMMARY
+Passionate Full Stack Developer with 2+ years of experience building scalable web applications. Proficient in modern JavaScript frameworks, RESTful API development, and database design. Strong problem-solving skills with a focus on clean code and user experience. Actively seeking opportunities in software development roles.
+
+TECHNICAL SKILLS
+Languages: JavaScript, Python, Java, HTML, CSS, SQL
+Frontend: React, Redux, Vue.js, Tailwind CSS, Bootstrap, jQuery
+Backend: Node.js, Express.js, Django, Flask, Spring Boot
+Databases: MongoDB, PostgreSQL, MySQL, Redis
+DevOps: Git, GitHub, Docker, AWS, CI/CD, Jenkins
+Tools: VS Code, Postman, Jira, Figma, Webpack
+
+PROFESSIONAL EXPERIENCE
+
+Software Developer | Tech Solutions Inc. | June 2022 - Present
+• Developed and maintained 5+ web applications using React and Node.js, serving 10,000+ users
+• Designed and implemented RESTful APIs with Express.js, reducing response time by 40%
+• Collaborated with cross-functional team of 8 to deliver features meeting 100% of sprint commitments
+• Optimized database queries in MongoDB, improving application performance by 35%
+• Implemented JWT-based authentication and role-based access control for secure user management
+• Participated in code reviews and mentored 2 junior developers
+
+Junior Developer | StartupXYZ | January 2021 - May 2022
+• Built responsive user interfaces using React and Bootstrap, achieving 98% mobile compatibility
+• Integrated third-party APIs including payment gateways and social media authentication
+• Fixed 50+ production bugs and reduced system downtime by 30% through proactive monitoring
+• Wrote unit tests using Jest, achieving 85% code coverage
+• Documented API endpoints and created user guides for internal tools
+
+PROJECTS
+
+E-Commerce Platform | MERN Stack | github.com/johndoe/ecommerce
+• Developed full-stack e-commerce application with shopping cart, checkout, and order management
+• Implemented secure payment integration using Stripe API
+• Built admin dashboard for inventory management and sales analytics
+• Deployed on AWS EC2 with automated CI/CD pipeline using GitHub Actions
+• Technologies: React, Node.js, Express, MongoDB, Redux, Tailwind CSS
+
+Real-Time Chat Application | WebSocket | github.com/johndoe/chat-app
+• Created real-time messaging application supporting group chats and file sharing
+• Implemented WebSocket connections using Socket.io for instant message delivery
+• Added user presence indicators and typing notifications
+• Technologies: React, Node.js, Socket.io, PostgreSQL, Material-UI
+
+Task Management Dashboard | React + Firebase | github.com/johndoe/task-manager
+• Built Kanban-style task board with drag-and-drop functionality
+• Integrated Firebase for real-time data synchronization and user authentication
+• Implemented dark mode and responsive design for mobile devices
+• Technologies: React, Firebase, Styled Components, React Beautiful DnD
+
+EDUCATION
+
+Bachelor of Technology in Computer Science
+State University | Graduated: May 2021 | GPA: 3.7/4.0
+
+Relevant Coursework: Data Structures, Algorithms, Database Management, Web Development, Software Engineering, Computer Networks
+
+CERTIFICATIONS
+• AWS Certified Cloud Practitioner | Amazon Web Services | 2023
+• MongoDB Certified Developer | MongoDB University | 2022
+• React - The Complete Guide | Udemy | 2021
+
+ACHIEVEMENTS
+• Won 1st place in University Hackathon 2021 for building an AI-powered study assistant
+• Contributed to 5+ open-source projects with 100+ GitHub stars combined
+• Published 10+ technical blog posts on Medium with 5,000+ total views
+• Active participant in Stack Overflow with 500+ reputation points
+
+ADDITIONAL INFORMATION
+Languages: English (Fluent), Spanish (Intermediate)
+Interests: Open Source Contribution, Tech Blogging, UI/UX Design, Competitive Programming
+Availability: Immediate | Notice Period: 2 weeks

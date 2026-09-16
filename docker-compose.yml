@@ -1,0 +1,78 @@
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - deepskill_net
+    restart: always
+
+  ai_service:
+    build:      
+      context: ./ai_service
+      dockerfile: Dockerfile
+    container_name: ai_service
+    ports:
+      - "8000:8000"
+    environment:
+      - DEPLOYMENT_MODE=docker
+      - AI_MODE=${AI_MODE:-online}
+      - AI_PROVIDER=${AI_PROVIDER:-gemini}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GEMINI_MODELS=${GEMINI_MODELS:-gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash}
+      - USE_HYBRID_AI=${USE_HYBRID_AI:-true}
+      - PORT=8000
+    networks:
+      - deepskill_net
+    depends_on:
+      - mongodb
+    restart: always
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "5000:5000"
+    environment:
+      - DEPLOYMENT_MODE=docker
+      - AI_MODE=${AI_MODE:-online}
+      - AI_PROVIDER=${AI_PROVIDER:-gemini}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - NODE_ENV=production
+      - PORT=5000
+      - MONGODB_URI=mongodb://mongodb:27017/deepskill
+      - PYTHON_SERVICE_URL=http://ai_service:8000
+      - CORS_ORIGIN=http://localhost:3000
+    networks:
+      - deepskill_net
+    depends_on:
+      - mongodb
+      - ai_service
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_URL=http://localhost:5000
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - deepskill_net
+    depends_on:
+      - backend
+    restart: always
+
+volumes:
+  mongodb_data:
+
+networks:
+  deepskill_net:
+    driver: bridge
