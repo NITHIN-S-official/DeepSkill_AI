@@ -787,6 +787,21 @@ MIT License permits use, modification, distribution, and private or commercial u
 
 ---
 
+PROJECT ATTRIBUTION
+
+If you use, modify, or build upon DeepSkill AI, attribution to the original
+project is requested.
+
+Please mention "DeepSkill AI" and provide a link to the original repository:
+
+https://github.com/NITHIN-S-official/DeepSkill_AI
+
+Example attribution:
+
+"Based on DeepSkill AI by NITHIN-S-official."
+
+---
+
 # 👤 Author
 
 **DeepSkill AI — Placement Readiness Platform**
