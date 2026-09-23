@@ -43,6 +43,7 @@ class PythonConfig:
     HOST = os.getenv("HOST", "0.0.0.0")
 
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+    HF_TOKEN = os.getenv("HF_TOKEN", "")
     USE_HYBRID_AI = os.getenv("USE_HYBRID_AI", "true").lower() == "true"
     CORS_ORIGIN = os.getenv("CORS_ORIGIN", "http://localhost:3000")
 
